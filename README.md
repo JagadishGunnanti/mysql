@@ -2,13 +2,13 @@
 
 > A MicroService powered by Docker which fetches GEOIP JSON Data, parses and then dumps it into MySQL Database at regular intervals.
 
-# Installations
+## Installation
 
 - Install docker from docker.io
 - Download and Install docker-compose from [here](https://docs.docker.com/compose/install/#install-compose)
 
 
-# Usage
+## Usage
 - Start the MicroService by running Yaml file using docker-compose as below.
 
-```docker-compose -f mysql.yml up -d```
+> ```docker-compose -f mysql.yml up -d```
