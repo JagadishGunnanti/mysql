@@ -12,5 +12,6 @@ CREATE TABLE IF NOT EXISTS jsons_test(
                LOAD DATA LOCAL INFILE '/tmp/json/test.json'
                INTO table jsons_test(json_data);
 EOF
+rm -rf /tmp/json/
 sleep 60
 done
