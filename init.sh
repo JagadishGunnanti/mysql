@@ -13,7 +13,7 @@ function getPropValue() {
   awk -F "[,:}]" '{for(i=1;i<=NF;i++){if($i~/'$KEY'\042/){print $(i+1)}}}' | tr -d '"' | sed -n ${num}p;
 }
 
-echo "Parsing GEOPIP Data";
+echo "Parsing GEOIP Data";
 continent_code=$(cat /tmp/json/test1.json|getPropValue continent_code);
 country_code=$(cat /tmp/json/test1.json|getPropValue country_code);
 country_name=$(cat /tmp/json/test1.json|getPropValue country_name);
